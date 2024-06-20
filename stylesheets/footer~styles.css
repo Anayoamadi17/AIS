@@ -8,6 +8,13 @@
     padding: 20px 20px;
 }
 
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 .contact a {
     text-decoration: none;
     color: white;
@@ -84,7 +91,7 @@
 @media screen and (max-width: 750px) {
     .footer {
         row-gap: 15px;
-        padding: 20px 10px;
+        padding: 10px 10px;
     }
     
     .contact a {
@@ -105,4 +112,39 @@
     .copyright  a {
         padding: 2px 2px;
     }
+}
+
+@media screen and (max-width: 500px) {
+      
+    .footer {
+        row-gap: 15px;
+        padding: 20px 10px;
+    }
+    
+    .services {
+        flex-wrap: wrap;
+    }
+
+    .contact a {
+        font-size: 18px;
+    }
+
+    .services li {
+        padding-right: 5px;
+    }
+
+    .services span,
+    .services li {
+        font-size: 8px;
+    }
+    
+    .copyright {
+        justify-content: center;
+        width: 100%;
+        font-size: 8px;
+    }
+    
+    .copyright  a {
+        padding: 1px 1px;
+    }            
 }

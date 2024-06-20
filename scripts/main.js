@@ -3,15 +3,19 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
     const showClose = document.getElementById('nav-icon');
     const showMenu = document.getElementById('menu');
+    const removeCartIcon = document.getElementById('cart');
 
     showClose.addEventListener('click', function () {
         showMenu.classList.toggle('show-menu');
         showClose.classList.toggle('show-close');
+        removeCartIcon.classList.toggle('removeCart');
     });
 
     const addCartButton = document.querySelectorAll('#Add-to-cart'); 
     const cartNumber = document.querySelector('#cart-number');
     const showRemoveCart = document.querySelectorAll('#Remove-from-cart');
+    const showCart = document.getElementById('show-cart');
+    let screenWidth = window.innerWidth;
 
     let updateCartNumber = 0;
     cartNumber.innerHTML = updateCartNumber;
@@ -41,6 +45,8 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
         });
     }
+
+    
 });
 
 

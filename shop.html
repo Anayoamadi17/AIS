@@ -11,6 +11,57 @@
         <link rel="stylesheet" href="stylesheets/footer~styles.css">
         <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
     </head>
+    <style>
+        .search {
+            width: 70%;
+            height: 40px;
+            padding: 10px 10px;
+            background-color: white;
+            border: none;
+            border-radius: 10px;
+            width: 75%;
+        }
+
+        .search::placeholder {
+            color: #03df03;
+            font-size: 16px;
+        }
+
+        .search:focus {
+            background: linear-gradient(
+                60deg,
+                #006400,
+                #03df03,
+                #006400
+            );
+
+            outline: none;
+            font-size: 16px;
+            color: white;
+        }
+
+        .input {
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            position: relative;
+            width: 100%;
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 130px;
+            color: white;
+            width: 40px;
+            height: 40px;
+            background-color: #006400;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+    </style>
     <body>
         <!-- header section the navigation, company name and logo all goes here -->
 
@@ -46,7 +97,7 @@
                         </li>
                         
                         <li class="nav-menu">
-                            <a href="shop.html" class="nav-link">Shop</a>
+                            <a href="shop.html"class="nav-link">Shop</a>
                         </li>
 
                         <li class="nav-menu">
@@ -67,23 +118,14 @@
             </nav>
         </header>
 
-        <!-- this is the hero section, business websites do have hero section -->
-
-        <section class="hero-section">
-            <div class="hero-text">
-                <h1>Welcome to our e-commerce webpage <h1 class="name-of-customer"></h1></h1>
-                <p>virtual shopping at its best</p>
-                <button>
-                    <a href="#main" class="main-body-link">
-                        <span class="name-of-customer2"></span> ...let`s start shopping...
-                    </a>
-                </button>
-            </div>
-        </section>
-
         <!-- this is the main body of the page -->
 
         <section class="main" id="main">
+            <div class="input">
+                <input type="search" class="search" placeholder="search">
+                <i class="ri-search-2-fill search-icon"></i>
+            </div>
+
             <h1>Feautured Products</h1>
             <p>Amazing Collections & Mordern Design</p>
             <div class="item-grid">
@@ -386,9 +428,9 @@
             <div class="copyright">
                 <div class="copyright-container">Copyrights &copy; 2024 <span>Kiddie Tech-ville</span></div>
                 <div class="more-tabs">
-                    <a href="about.html">About Us</a>
-                    <a href="" >Privacy</a>
-                    <a href="#" >License</a>
+                    <a href="about.html" target="_blank">About Us</a>
+                    <a href="#" target="_blank">Privacy</a>
+                    <a href="#" target="_blank">License</a>
                 </div>
             </div>
 

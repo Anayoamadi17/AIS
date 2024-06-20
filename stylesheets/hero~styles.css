@@ -15,13 +15,13 @@
     justify-content: space-between;
     align-items: center;
     row-gap: 20px;
-    flex-shrink: 0;
     color: white;
 }
 
 .hero-text h1 {
     font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 .hero-text p {
@@ -48,9 +48,27 @@
     opacity: 0.8;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 740px) {
     .hero-text h1 {
-        font-size: 20px;
+        font-size: 30px;
+    }
+    
+    .hero-text p {
+        font-size: 12px;
+    }
+    
+    .hero-text button {
+        padding: 5px 10px;
+    }
+    
+    .main-body-link {
+        font-size: small;
+    }
+}
+
+@media (min-width: 741px) and (max-width: 1000px) {
+    .hero-text h1 {
+        font-size: 40px;
     }
     
     .hero-text p {
