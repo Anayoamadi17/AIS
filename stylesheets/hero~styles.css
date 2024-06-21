@@ -48,7 +48,25 @@
     opacity: 0.8;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 450px) {
+    .hero-text h1 {
+        font-size: 25px;
+    }
+    
+    .hero-text p {
+        font-size: 12px;
+    }
+    
+    .hero-text button {
+        padding: 5px 10px;
+    }
+    
+    .main-body-link {
+        font-size: small;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 740px) {
     .hero-text h1 {
         font-size: 30px;
     }

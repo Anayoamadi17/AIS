@@ -12,14 +12,27 @@
         <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
     </head>
     <style>
+        .input {
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            position: relative;
+            width: 75%;
+        }
+
         .search {
             width: 70%;
             height: 40px;
-            padding: 10px 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 35px;
             background-color: white;
             border: none;
-            border-radius: 10px;
-            width: 75%;
+            border-radius: 20px;
+            outline: none;
+            flex: 1;
+            transition: all .1s;
         }
 
         .search::placeholder {
@@ -34,31 +47,25 @@
                 #03df03,
                 #006400
             );
-
-            outline: none;
             font-size: 16px;
             color: white;
         }
 
-        .input {
-            display: flex;
-            justify-content: center;
-            align-items:center;
-            position: relative;
-            width: 100%;
-        }
+        .search:focus + .search-icon {
+            color: white;
+        } 
 
         .search-icon {
             position: absolute;
-            right: 130px;
-            color: white;
-            width: 40px;
-            height: 40px;
-            background-color: #006400;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            right: 15px;
+            color: #006400;
+            font-weight: 700;
             cursor: pointer;
+            transition: color .2s;
+        }
+
+        .search-iconNew {
+            color: white;
         }
 
     </style>
@@ -122,8 +129,8 @@
 
         <section class="main" id="main">
             <div class="input">
-                <input type="search" class="search" placeholder="search">
-                <i class="ri-search-2-fill search-icon"></i>
+                <input type="text" class="search" placeholder="Search..." id="input">
+                <i class="ri-search-line search-icon" id="search-icon"></i>
             </div>
 
             <h1>Feautured Products</h1>
@@ -428,7 +435,7 @@
             <div class="copyright">
                 <div class="copyright-container">Copyrights &copy; 2024 <span>Kiddie Tech-ville</span></div>
                 <div class="more-tabs">
-                    <a href="about.html" target="_blank">About Us</a>
+                    <a href="about.html">About Us</a>
                     <a href="#" target="_blank">Privacy</a>
                     <a href="#" target="_blank">License</a>
                 </div>

@@ -14,8 +14,6 @@ document.addEventListener('DOMContentLoaded', function (event) {
     const addCartButton = document.querySelectorAll('#Add-to-cart'); 
     const cartNumber = document.querySelector('#cart-number');
     const showRemoveCart = document.querySelectorAll('#Remove-from-cart');
-    const showCart = document.getElementById('show-cart');
-    let screenWidth = window.innerWidth;
 
     let updateCartNumber = 0;
     cartNumber.innerHTML = updateCartNumber;
@@ -45,7 +43,6 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
         });
     }
-
     
 });
 
